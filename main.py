@@ -30,8 +30,8 @@ def main():
 
     load_dotenv()
 
-    tg_token = os.environ['tg_token']
-    tg_chat_id = os.environ['tg_chat_id']
+    tg_token = os.environ['TG_TOKEN']
+    tg_chat_id = os.environ['TG_CHAT_ID']
     bot = ptbot.Bot(tg_token)
 
     bot.send_message(tg_chat_id, "Бот запущен")
